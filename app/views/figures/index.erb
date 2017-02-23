@@ -1,0 +1,10 @@
+<h1>Figures</h1>
+<% Figure.all.each do |s|%>
+<h2>Figure Name:<%= s.name %></h2>
+<h2>Figure Id:<%= s.id %></h2>
+  <h2>Figure Landmarks:</h2>
+  <%s.landmarks.each do |g|%>
+  <h2><%= g.name %></h2>
+  <% end %>
+
+<% end %>
